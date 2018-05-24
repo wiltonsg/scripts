@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo Removendo programa..
-if ! apt-get purge $1*
+if ! apt purge $1*
 then
     echo "Não foi possível remover o programa $1"
     exit 1
