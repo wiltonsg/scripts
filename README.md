@@ -12,12 +12,12 @@ git clone git@github.com:wiltonsg/scripts_shell.git
 Dê permissão aos scripts como executável
 
 ```
-chmod +x atualiza.sh instala.sh desinstala.sh limpa.sh
+chmod +x atualiza instala desinstala limpa
 ```
 Copie os scripts para o diretório /usr/bin
 
 ```
-sudo cp atualiza.sh instala.sh desinstala.sh limpa.sh /usr/bin
+sudo cp atualiza instala desinstala limpa /usr/bin
 ```
 
 ## Execute os scripts
@@ -25,22 +25,22 @@ sudo cp atualiza.sh instala.sh desinstala.sh limpa.sh /usr/bin
 ### Atualizar o Sistema
 
 ```
-sudo atualiza.sh
+sudo atualiza
 ```
 
 ### Instalar programas, o exemplo aqui é o VLC
 
 ```
-sudo instala.sh vlc
+sudo instala vlc
 ```
 
 ### Remoção de programas e seus pacotes associados, o exemplo aqui é o Transmission
 
 ```
-sudo desinstala.sh transmission
+sudo desinstala transmission
 ```
 ### Limpar o Sistema removendo pacotes órfãos, parcialmente baixados e pacotes desnecessários
 
 ```
-sudo limpa.sh
+sudo limpa
 ```
