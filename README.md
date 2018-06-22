@@ -7,7 +7,7 @@ Aqui será disponibilizado Shell Scripts para automatizar diversas tarefas no Si
 ## Faça o donwnload do projeto.
 
 ```
-git clone git@github.com:wiltonsg/scripts_shell.git
+git clone git@github.com:wiltonsg/scripts.git
 ```
 Dê permissão aos scripts como executável
 
