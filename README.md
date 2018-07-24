@@ -1,6 +1,7 @@
 # Scripts em Shell
 
 Aqui será disponibilizado Shell Scripts para automatizar diversas tarefas no Sistema Operacional como atualização, instalação, remoção e limpeza do Sistema e/ou programas dentre outros.
+Lembrando que será necessário ter o pacote "deborphan" instalado para funcionar completamente.
 
 # Utilizando os scripts
 
