@@ -1,6 +1,6 @@
 # Scripts em Shell
 
-Aqui será disponibilizado Shell Scripts para automatizar diversas tarefas no Sistema Operacional como atualização, instalação, remoção e limpeza do Sistema e/ou programas dentre outros.
+Estou disponibilizando estes Shell Scripts para automatizar tarefas no Debian, Ubuntu, Linux Mint e outro derivados como atualização, instalação, remoção e limpeza do Sistema e/ou programas.
 Lembrando que será necessário ter o pacote "deborphan" instalado para funcionar completamente.
 
 # Utilizando os scripts
