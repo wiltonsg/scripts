@@ -18,7 +18,7 @@ chmod +x atualiza instala desinstala limpa limpaswap
 Copie os scripts para o diretório /usr/bin
 
 ```
-sudo cp atualiza instala desinstala limpa /usr/bin
+sudo cp atualiza instala desinstala limpa limpaswap /usr/bin
 ```
 
 ## Execute os scripts
