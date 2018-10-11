@@ -13,7 +13,7 @@ git clone git@github.com:wiltonsg/scripts.git
 Dê permissão aos scripts como executável
 
 ```
-chmod +x atualiza instala desinstala limpa
+chmod +x atualiza instala desinstala limpa limpaswap
 ```
 Copie os scripts para o diretório /usr/bin
 
@@ -44,4 +44,10 @@ sudo desinstala transmission
 
 ```
 sudo limpa
+```
+
+### Limpar o Memória Cache e Swap do Linux
+
+```
+sudo limpaswap
 ```
