@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo Atualizando repositórios..
+echo "Atualizando repositórios..."
 if ! apt update
 then
     echo "Não foi possível atualizar os repositórios. Verifique seu arquivo /etc/apt/sources.list"
@@ -22,4 +22,5 @@ then
     echo "Não foi possível instalar o pacote $1"
     exit 1
 fi
+clear
 echo "Instalação finalizada"
