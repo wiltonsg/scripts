@@ -13,12 +13,12 @@ git clone git@github.com:wiltonsg/scripts.git
 Dê permissão aos scripts como executável
 
 ```
-chmod +x atualiza instala desinstala limpa limpaswap
+chmod +x atualiza remove limpa limpaswap
 ```
 Copie os scripts para o diretório /usr/bin
 
 ```
-sudo cp atualiza instala desinstala limpa limpaswap /usr/bin
+sudo cp atualiza remove limpa limpaswap /usr/bin
 ```
 
 ## Execute os scripts
@@ -29,16 +29,10 @@ sudo cp atualiza instala desinstala limpa limpaswap /usr/bin
 sudo atualiza
 ```
 
-### Instalar programas, o exemplo aqui é o VLC
-
-```
-sudo instala vlc
-```
-
 ### Remoção de programas e seus pacotes associados, o exemplo aqui é o Transmission
 
 ```
-sudo desinstala transmission
+sudo remove transmission
 ```
 ### Limpar o Sistema removendo pacotes órfãos, parcialmente baixados e pacotes desnecessários
 
