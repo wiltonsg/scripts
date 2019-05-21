@@ -16,12 +16,5 @@ then
 fi
 echo "Remoção de pacotes feita com sucesso"
 
-echo "Removendo pacotes Órfãos"
-if ! apt remove $(deborphan) -y
-then
-    echo "Não foi possível remover os pacotes órfãos"
-    exit 1
-fi
-echo "Remoção de pacotes órfãos feita com sucesso"
 clear
 echo "Limpeza feita com sucesso"
