@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Startando Serviços"
+
+echo "Startando LXC"
+systemctl start lxc.service
+systemctl start lxc-net.service
+systemctl start lxcfs.service
+
+echo "Startando LXD"
+systemctl start lxd.service
+systemctl start lxd-containers.service
