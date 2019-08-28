@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Startando Serviços"
+echo "Startando Serviços LXC/LXD"
 
 echo "Startando LXC"
 systemctl start lxc.service

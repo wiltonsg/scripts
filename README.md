@@ -12,12 +12,12 @@ git clone git@github.com:wiltonsg/scripts.git
 Dê permissão aos scripts como executável
 
 ```
-chmod +x atualiza remove limpa limpaswap startcontainer stopcontainer
+chmod +x atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker
 ```
 Copie os scripts para o diretório /usr/bin
 
 ```
-sudo cp atualiza remove limpa limpaswap startcontainer stopcontainer /usr/bin
+sudo cp atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker /usr/bin
 ```
 
 ## Execute os scripts
@@ -48,11 +48,23 @@ sudo limpaswap
 ### Inicia os serviços LXC e LXD
 
 ```
-startcontainer
+sudo startcontainer
 ```
 
 ### Para os serviços LXC e LXD
 
 ```
-stopcontainer
+sudo stopcontainer
+```
+
+### Inicia o serviço Docker
+
+```
+sudo startdocker
+```
+
+### Para o serviço Docker
+
+```
+sudo stopdocker
 ```

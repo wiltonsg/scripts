@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Parando Serviços"
+echo "Parando Serviços LXC/LXD"
 
 echo "Parando LXC"
 systemctl stop lxc.service
