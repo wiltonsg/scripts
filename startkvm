@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Startando Serviços QEMU/KVM"
+
+echo "Startando QEMU/KVM"
+systemctl start libvirt-guests.service
+systemctl start libvirtd.service
+systemctl start qemu-kvm.service

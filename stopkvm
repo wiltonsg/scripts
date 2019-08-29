@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Parando Serviços QEMU/KVM"
+
+echo "Parando QEMU/KVM"
+systemctl stop libvirt-guests.service
+systemctl stop libvirtd.service
+systemctl stop qemu-kvm.service
