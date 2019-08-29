@@ -4,3 +4,4 @@ echo "Startando Serviço Docker"
 
 echo "Startando Docker"
 systemctl start docker.service
+systemctl start containerd.service
