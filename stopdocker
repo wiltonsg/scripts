@@ -5,3 +5,5 @@ echo "Parando Serviços Docker"
 echo "Parando Docker"
 systemctl stop docker.service
 systemctl stop containerd.service
+
+echo "Docker parado"

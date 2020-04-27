@@ -1,7 +1,8 @@
 #!/bin/bash
 
-echo "Startando Serviço Docker"
+echo "Iniciando Serviço Docker"
 
-echo "Startando Docker"
+echo "Iniciando Docker"
 systemctl start docker.service
 systemctl start containerd.service
+echo "Docker iniciado"
