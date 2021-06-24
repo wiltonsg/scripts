@@ -12,12 +12,12 @@ git clone git@github.com:wiltonsg/scripts.git
 Dê permissão aos scripts como executável
 
 ```
-chmod +x atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm
+chmod +x atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu
 ```
 Copie os scripts para o diretório /usr/bin
 
 ```
-sudo cp atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm /usr/bin
+sudo cp atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu /usr/bin
 ```
 
 ## Execute os scripts
@@ -69,14 +69,32 @@ sudo startdocker
 sudo stopdocker
 ```
 
-### Inicia o serviço QEMU/KVM/Libvirt
+### Inicia o serviço QEMU/KVM/Libvirt (Ubuntu)
 
 ```
 sudo startkvm
 ```
 
-### Para o serviço QEMU/KVM/Libvirt
+### Para o serviço QEMU/KVM/Libvirt (Ubuntu)
 
 ```
 sudo stopkvm
+```
+
+### Para limpeza do cache do browser web Qutebowser
+
+```
+ccqb
+```
+
+### Inicia o serviço QEMU/KVM/Libvirt (Debian)
+
+```
+sudo startqemu
+```
+
+### Para o serviço QEMU/KVM/Libvirt (Debian)
+
+```
+sudo stopqemu
 ```
