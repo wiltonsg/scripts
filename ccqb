@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Limpando o cache do Qutebrowser"
+
+rm -rf ~/.cache/qutebrowser/webengine/Cache/*
+rm -rf ~/.local/share/qutebrowser/webengine/Service\ Worker/ScriptCache/*
+rm -rf ~/.local/share/qutebrowser/webengine/Service\ Worker/CacheStorage/*
+rm -rf ~/.local/share/qutebrowser/webengine/Local\ Storage/*
+rm -rf ~/.local/share/qutebrowser/webengine/IndexedDB/*
+rm -rf ~/.local/share/qutebrowser/webengine/GPUCache/*
+
+echo "Limpeza completa!"
