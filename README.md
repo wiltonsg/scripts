@@ -12,12 +12,12 @@ git clone git@github.com:wiltonsg/scripts.git
 Dê permissão aos scripts como executável
 
 ```
-chmod +x atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu
+chmod +x atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu startlxc stoplxc
 ```
 Copie os scripts para o diretório /usr/bin
 
 ```
-sudo cp atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu /usr/bin
+sudo cp atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu startlxc stoplxc /usr/bin
 ```
 
 ## Execute os scripts
@@ -97,4 +97,16 @@ sudo startqemu
 
 ```
 sudo stopqemu
+```
+
+### Inicia os serviços LXC (Debian)
+
+```
+sudo startlxc
+```
+
+### Para os serviços LXC (Debian)
+
+```
+sudo stoplxc
 ```
