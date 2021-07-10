@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Startando Serviço Tor"
+
+echo "Startando o Tor"
+systemctl start tor.service
+
+echo "Tor iniciado"

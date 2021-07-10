@@ -12,12 +12,12 @@ git clone git@github.com:wiltonsg/scripts.git
 Dê permissão aos scripts como executável
 
 ```
-chmod +x atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu startlxc stoplxc
+chmod +x atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu startlxc stoplxc start-tor stop-tor
 ```
 Copie os scripts para o diretório /usr/bin
 
 ```
-sudo cp atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu startlxc stoplxc /usr/bin
+sudo cp atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu startlxc stoplxc start-tor stop-tor /usr/bin
 ```
 
 ## Execute os scripts
@@ -109,4 +109,16 @@ sudo startlxc
 
 ```
 sudo stoplxc
+```
+
+### Iniciar o serviço Tor
+
+```
+start-tor 
+```
+
+### Parar o serviço Tor
+
+```
+stop-tor
 ```
