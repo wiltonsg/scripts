@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo “Limpando Cache da RAM”
+
+echo 3 > /proc/sys/vm/drop_caches
+sysctl -w vm.drop_caches=3
+clear
+echo “Limpeza de Cache da RAM efetuada com sucesso”

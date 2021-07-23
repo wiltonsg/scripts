@@ -12,12 +12,12 @@ git clone git@github.com:wiltonsg/scripts.git
 Dê permissão aos scripts como executável
 
 ```
-chmod +x atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu startlxc stoplxc start-tor stop-tor
+chmod +x atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu startlxc stoplxc start-tor stop-tor ccram
 ```
 Copie os scripts para o diretório /usr/bin
 
 ```
-sudo cp atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu startlxc stoplxc start-tor stop-tor /usr/bin
+sudo cp atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu startlxc stoplxc start-tor stop-tor ccram /usr/bin
 ```
 
 ## Execute os scripts
@@ -121,4 +121,10 @@ start-tor
 
 ```
 stop-tor
+```
+
+### Para limpeza do cache da memória RAM
+
+```
+ccram
 ```
