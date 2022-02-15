@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 echo "Removendo Xonsh..."
 sudo rm -rf /usr/local/bin/xon.sh
