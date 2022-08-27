@@ -1,0 +1,51 @@
+#!/bin/sh
+
+echo "Atualizando os Plugins do Vim"
+
+rm -rf ~/.vim/pack/plugin/start
+
+git clone https://github.com/cohama/agit.vim.git ~/.vim/pack/plugin/start/agit
+
+git clone https://github.com/dense-analysis/ale.git ~/.vim/pack/plugin/start/ale
+
+git clone https://github.com/jiangmiao/auto-pairs.git ~/.vim/pack/plugin/start/auto-pairs
+
+git clone https://github.com/rafi/awesome-vim-colorschemes.git ~/.vim/pack/plugin/start/awesome-vim-colorschemes
+
+git clone https://github.com/lilydjwg/colorizer.git ~/.vim/pack/plugin/start/colorizer
+
+git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/pack/plugin/start/ctrlp
+
+git clone https://github.com/mattn/emmet-vim.git ~/.vim/pack/plugin/start/emmet-vim
+
+git clone https://github.com/Yggdroot/indentLine.git ~/.vim/pack/plugin/start/indentLine
+
+git clone https://github.com/preservim/nerdcommenter.git ~/.vim/pack/plugin/start/nerdcommenter
+
+git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/plugin/start/nerdtree
+
+git clone https://github.com/Xuyuanp/nerdtree-git-plugin.git ~/.vim/pack/plugin/start/nerdtree-git-plugin
+
+git clone https://github.com/vim-airline/vim-airline.git ~/.vim/pack/plugin/start/vim-airline
+
+git clone https://github.com/vim-airline/vim-airline-themes.git ~/.vim/pack/plugin/start/vim-airline-themes
+
+git clone https://github.com/alvan/vim-closetag.git ~/.vim/pack/plugin/start/vim-closetag
+
+git clone https://github.com/tomasiser/vim-code-dark.git ~/.vim/pack/plugin/start/vim-code-dark
+
+git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/pack/plugin/start/vim-colorschemes
+
+git clone https://github.com/ryanoasis/vim-devicons.git ~/.vim/pack/plugin/start/vim-devicons
+
+git clone https://github.com/sheerun/vim-polyglot.git ~/.vim/pack/plugin/start/vim-polyglot
+
+rm -rf ~/.vim/pack/plugin/opt
+
+git clone https://github.com/rstacruz/vim-closer.git ~/.vim/pack/plugin/opt/vim-closer
+
+git clone https://github.com/zeekay/vim-beautify.git ~/.vim/pack/plugin/opt/vim-beautify
+
+git clone https://github.com/tpope/vim-endwise.git ~/.vim/pack/plugin/opt/vim-endwise
+
+echo "Atualização concluida"
