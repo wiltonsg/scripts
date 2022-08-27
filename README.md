@@ -12,12 +12,12 @@ git clone git@github.com:wiltonsg/scripts.git
 Dê permissão aos scripts como executável
 
 ```
-chmod +x atualiza ccram remove limpa swap ccqb lamp
+chmod +x atualiza ccram remove limpa swap ccqb lamp packvim
 ```
 Copie os scripts para o diretório ~/bin
 
 ```
-cp atualiza ccram remove limpa swap ccqb lamp ~/bin
+cp atualiza ccram remove limpa swap ccqb lamp packvim ~/bin
 ```
 
 ## Execute os scripts
@@ -61,4 +61,10 @@ ccram
 
 ```
 lamp
+```
+
+### Atualiza os pacotes do Vim
+
+```
+packvim
 ```
