@@ -1,6 +1,6 @@
-# Scripts em Shell
+# Meus Scripts em Shell
 
-Estou disponibilizando estes Shell Scripts para automatizar tarefas no Debian, Ubuntu, Linux Mint e outro derivados como atualização, instalação, remoção e limpeza do Sistema e/ou programas.
+Estes script tem a finalidade facilitar algumas tarefas minhas no terminal.
 
 # Utilizando os scripts
 
@@ -12,12 +12,12 @@ git clone git@github.com:wiltonsg/scripts.git
 Dê permissão aos scripts como executável
 
 ```
-chmod +x atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu startlxc stoplxc start-tor stop-tor ccram
+chmod +x atualiza ccram remove limpa swap ccqb lamp
 ```
-Copie os scripts para o diretório /usr/bin
+Copie os scripts para o diretório ~/bin
 
 ```
-sudo cp atualiza remove limpa limpaswap startcontainer stopcontainer startdocker stopdocker startkvm stopkvm ccqb startqemu stopqemu startlxc stoplxc start-tor stop-tor ccram /usr/bin
+cp atualiza ccram remove limpa swap ccqb lamp ~/bin
 ```
 
 ## Execute os scripts
@@ -25,60 +25,24 @@ sudo cp atualiza remove limpa limpaswap startcontainer stopcontainer startdocker
 ### Atualizar o Sistema
 
 ```
-sudo atualiza
+atualiza
 ```
 
 ### Remoção de programas e seus pacotes associados, o exemplo aqui é o Transmission
 
 ```
-sudo remove transmission
+remove transmission
 ```
 ### Limpar o Sistema removendo pacotes órfãos, parcialmente baixados e pacotes desnecessários
 
 ```
-sudo limpa
+limpa
 ```
 
-### Limpar o Memória Cache e Swap do Linux
+### Ferramenta para SWAP
 
 ```
-sudo limpaswap
-```
-
-### Inicia os serviços LXC e LXD
-
-```
-sudo startcontainer
-```
-
-### Para os serviços LXC e LXD
-
-```
-sudo stopcontainer
-```
-
-### Inicia o serviço Docker
-
-```
-sudo startdocker
-```
-
-### Para o serviço Docker
-
-```
-sudo stopdocker
-```
-
-### Inicia o serviço QEMU/KVM/Libvirt (Ubuntu)
-
-```
-sudo startkvm
-```
-
-### Para o serviço QEMU/KVM/Libvirt (Ubuntu)
-
-```
-sudo stopkvm
+swap
 ```
 
 ### Para limpeza do cache do browser web Qutebowser
@@ -87,44 +51,14 @@ sudo stopkvm
 ccqb
 ```
 
-### Inicia o serviço QEMU/KVM/Libvirt (Debian)
-
-```
-sudo startqemu
-```
-
-### Para o serviço QEMU/KVM/Libvirt (Debian)
-
-```
-sudo stopqemu
-```
-
-### Inicia os serviços LXC (Debian)
-
-```
-sudo startlxc
-```
-
-### Para os serviços LXC (Debian)
-
-```
-sudo stoplxc
-```
-
-### Iniciar o serviço Tor
-
-```
-start-tor 
-```
-
-### Parar o serviço Tor
-
-```
-stop-tor
-```
-
 ### Para limpeza do cache da memória RAM
 
 ```
 ccram
+```
+
+### Ferramenta de LAMP
+
+```
+lamp
 ```

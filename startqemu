@@ -1,8 +1,0 @@
-#!/bin/sh
-
-echo "Startando Serviços QEMU"
-
-systemctl start libvirt-guests.service
-systemctl start libvirtd.service
-
-echo "Serviços iniciados!"

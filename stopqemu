@@ -1,8 +1,0 @@
-#!/bin/sh
-
-echo "Parando Serviços QEMU"
-
-systemctl stop libvirt-guests.service
-systemctl stop libvirtd.service
-
-echo "Serviços parados!"

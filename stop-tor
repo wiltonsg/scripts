@@ -1,8 +1,0 @@
-#!/bin/sh
-
-echo "Parando Serviço Tor"
-
-echo "Parando o Tor"
-systemctl stop tor.service
-
-echo "Tor parado"

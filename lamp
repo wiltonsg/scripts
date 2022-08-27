@@ -1,0 +1,47 @@
+#!/bin/sh
+
+Menu() {
+clear
+echo "Ligar ou Desligar o LAMP ?"
+echo
+echo " Opções:"
+echo " 1. LAMP ON"
+echo " 2. LAMP OFF"
+echo " 3. SAIR"
+echo
+echo -n "Esolha uma opção: "
+read OPTION
+echo
+case $OPTION in
+    1)
+			echo "Ligando LAMP"
+      sudo systemctl start apache2.service
+      sudo systemctl start php7.4-fpm.service
+      sudo systemctl start mariadb.service
+      echo "LAMP ligado"
+			;;
+    2)
+      echo "Desligando LAMP"
+      sudo systemctl stop apache2.service
+      sudo systemctl stop php7.4-fpm.service
+      sudo systemctl stop mariadb.service
+      echo "LAMP desligado"
+      ;;
+    3)
+      exit
+      ;;
+    *) echo "Opção inválida" ;;
+esac
+
+echo
+echo -n "Sair? [S/N] "
+read SAIR
+echo
+case $SAIR in
+    s|S|"") exit ;;
+    n|N|"") Menu ;;
+    *) echo "Opção inválida" ;;
+esac
+}
+clear
+Menu

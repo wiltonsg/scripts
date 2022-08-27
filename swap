@@ -1,0 +1,49 @@
+#!/bin/sh
+
+Menu() {
+clear
+echo "Ferramenta de SWAP"
+echo
+echo " Opções:"
+echo " 1. SWAP ON"
+echo " 2. SWAP OFF"
+echo " 3. CLEAN SWAP"
+echo " 4. SAIR"
+echo
+echo -n "Esolha uma opção: "
+read OPTION
+echo
+case $OPTION in
+    1)
+	  echo "Ligando SWAP"
+      sudo swapon /media/restinga/SD/swapfile
+      echo "SWAP ligado"
+			;;
+    2)
+      echo "Desligando SWAP"
+      sudo swapoff /media/restinga/SD/swapfile
+      echo "SWAP desligado"
+      ;;
+    3)
+      echo "Limpando SWAP"
+      sudo swapoff -a
+      sudo swapon /media/restinga/SD/swapfile
+      ;;
+    4)
+      exit
+      ;;
+    *) echo "Opção inválida" ;;
+esac
+
+echo
+echo -n "Sair? [S/N] "
+read SAIR
+echo
+case $SAIR in
+    s|S|"") exit ;;
+    n|N|"") Menu ;;
+    *) echo "Opção inválida" ;;
+esac
+}
+clear
+Menu
