@@ -10,8 +10,8 @@ echo " 2. SWAP OFF"
 echo " 3. CLEAN SWAP"
 echo " 4. SAIR"
 echo
-echo -n "Esolha uma opção: "
-read OPTION
+printf "Esolha uma opção: "
+read -r OPTION
 echo
 case $OPTION in
     1)
@@ -36,11 +36,11 @@ case $OPTION in
 esac
 
 echo
-echo -n "Sair? [S/N] "
-read SAIR
+printf "Sair? [S/N] "
+read -r SAIR
 echo
 case $SAIR in
-    s|S|"") exit ;;
+    s|S|...) exit ;;
     n|N|"") Menu ;;
     *) echo "Opção inválida" ;;
 esac

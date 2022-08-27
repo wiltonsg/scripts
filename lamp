@@ -9,8 +9,8 @@ echo " 1. LAMP ON"
 echo " 2. LAMP OFF"
 echo " 3. SAIR"
 echo
-echo -n "Esolha uma opção: "
-read OPTION
+printf "Esolha uma opção: "
+read -r OPTION
 echo
 case $OPTION in
     1)
@@ -34,11 +34,11 @@ case $OPTION in
 esac
 
 echo
-echo -n "Sair? [S/N] "
-read SAIR
+printf "Sair? [S/N] "
+read -r SAIR
 echo
 case $SAIR in
-    s|S|"") exit ;;
+    s|S|...) exit ;;
     n|N|"") Menu ;;
     *) echo "Opção inválida" ;;
 esac
