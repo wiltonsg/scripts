@@ -16,18 +16,21 @@ echo
 case $OPTION in
     1)
 	  echo "Ligando SWAP"
-      sudo swapon /media/restinga/SD/swapfile
+      cd /media/restinga/SD/
+      sudo swapon /swapfile
       echo "SWAP ligado"
 			;;
     2)
       echo "Desligando SWAP"
-      sudo swapoff /media/restinga/SD/swapfile
+      cd /media/restinga/SD/
+      sudo swapoff /swapfile
       echo "SWAP desligado"
       ;;
     3)
       echo "Limpando SWAP"
       sudo swapoff -a
-      sudo swapon /media/restinga/SD/swapfile
+      cd /media/restinga/SD/
+      sudo swapon /swapfile
       ;;
     4)
       exit
