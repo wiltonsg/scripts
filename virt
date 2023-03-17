@@ -5,8 +5,8 @@ clear
 echo "Ligar ou Desligar o LibVirt"
 echo
 echo " Opções:"
-echo " 1. LAMP ON"
-echo " 2. LAMP OFF"
+echo " 1. LibVirt ON"
+echo " 2. LibVirt OFF"
 echo " 3. SAIR"
 echo
 printf "Esolha uma opção: "
