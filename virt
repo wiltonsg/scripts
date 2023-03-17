@@ -1,0 +1,47 @@
+#!/bin/sh
+
+Menu() {
+clear
+echo "Ligar ou Desligar o LibVirt"
+echo
+echo " Opções:"
+echo " 1. LAMP ON"
+echo " 2. LAMP OFF"
+echo " 3. SAIR"
+echo
+printf "Esolha uma opção: "
+read -r OPTION
+echo
+case $OPTION in
+    1)
+			echo "Ligando LibVirt"
+      sudo systemctl start libvirtd.service
+      sudo systemctl start libvirtd.socket
+      sudo systemctl start libvirt-guests.service
+      echo "LibVirt ligado"
+			;;
+    2)
+      echo "Desligando LAMP"
+      sudo systemctl stop libvirtd.service
+      sudo systemctl stop libvirtd.socket
+      sudo systemctl stop libvirt-guests.service
+      echo "LibVirt desligado"
+      ;;
+    3)
+      exit
+      ;;
+    *) echo "Opção inválida" ;;
+esac
+
+echo
+printf "Sair? [S/N] "
+read -r SAIR
+echo
+case $SAIR in
+    s|S|...) exit ;;
+    n|N|"") Menu ;;
+    *) echo "Opção inválida" ;;
+esac
+}
+clear
+Menu
