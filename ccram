@@ -1,8 +1,6 @@
 #!/bin/sh
 
-echo “Limpando Cache da RAM”
-
-echo 3 > /proc/sys/vm/drop_caches
-sudo sysctl -w vm.drop_caches=3
+echo "Limpando Cache da RAM"
+sudo sync; echo 3 > /proc/sys/vm/drop_caches
 clear
-echo “Limpeza de Cache da RAM efetuada com sucesso”
+echo "Limpeza de Cache da RAM efetuada com sucesso"
