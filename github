@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "Subindo serviço SSH do GitHub"
+echo "-----------------------------"
+ssh -T git@github.com
+echo "-----------------------------"
+echo "Digitar a senha da chave SSH"
+ssh-add ~/.ssh/github
+echo "-----------------------------"
+ssh -T git@github.com
